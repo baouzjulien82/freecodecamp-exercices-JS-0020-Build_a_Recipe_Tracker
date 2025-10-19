@@ -36,6 +36,12 @@ function getAverageRating(ratings) {
   const total = ratings[0] + ratings[1] + ratings[2] + ratings[3];
   return total / ratings.length;
 }
+//version préférée pour calcul de la moyenne d'un array avec méthode reduce()
+/* 
+const getAverageRating = (ratingsArray) => {
+  ratingsArray.reduce((a, b) => a + b, 0) / ratingsArray.length;
+}; 
+*/
 
 function getTotalIngredients(ingredients) {
   return ingredients.length;
