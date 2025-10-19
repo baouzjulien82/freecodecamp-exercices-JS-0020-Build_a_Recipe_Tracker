@@ -38,8 +38,10 @@ function getAverageRating(ratings) {
 }
 //version préférée pour calcul de la moyenne d'un array avec méthode reduce()
 /* 
-const getAverageRating = (ratingsArray) => {
-  ratingsArray.reduce((a, b) => a + b, 0) / ratingsArray.length;
+const getAverageRating = ratingsArray =>
+  ratingsArray.length
+    ? ratingsArray.reduce((a, b) => a + b, 0) / ratingsArray.length
+    : 0;
 }; 
 */
 
